@@ -17,7 +17,7 @@ require("../admin/config/config.php");
                 $kqqq = "";
                 if (isset($_POST["find-product"])) {
                     $tentimkiem = $_POST["find"];
-                    $sql2 = "SELECT * FROM sanpham  WHERE TenSP LIKE '%$tentimkiem%' LIKE '%$tentimkiem%'";
+                    $sql2 = "SELECT * FROM sanpham  WHERE TenSP LIKE '%$tentimkiem%'";
                     $result = $mysqli->query($sql2);
                     if ($result->num_rows > 0) {
                         while ($row = mysqli_fetch_array($result)) {
